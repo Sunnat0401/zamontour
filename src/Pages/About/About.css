@@ -1,0 +1,226 @@
+.about-cards{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 1250px;
+    padding:  15px;
+    border-bottom: 1px solid #AFAFAF;
+}
+.about-wrapper{
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+}
+.about-title{
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 2px 0 ;
+    display: flex;
+  }
+  .about-text{
+    font-size: 18px;
+    line-height: 20px;
+    color: #AFAFAF;
+    display: flex;
+    padding:  2px 0 ;
+  }
+.about-img{
+  width: 350px;
+  height:250px;
+  border-radius: 30px;
+}
+.about-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+}
+.about-texts{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: start; */
+  align-items: start;
+}
+.about-subtitle{
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 15px 0;  
+}
+.about-paragraph , .about-caption{
+  font-size: 18px;
+  line-height: 22px;
+  color: #AFAFAF;
+  display: flex;
+}
+.about-caption{
+  width: 100%;
+  box-sizing: border-box;
+  text-align: justify;
+  padding: 0 10px;
+}
+@media screen and (max-width:1260px) {
+  .about-cards{
+    width: 1000px;
+    margin: 0 auto;
+}
+.about-title{
+  padding:  10px ;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;;
+}
+.about-text{
+  font-size: 18px;
+  line-height: 20px;
+  color: #AFAFAF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:  10px ;
+  text-align: center;
+}
+}
+@media screen and (max-width:1035px) {
+  .about-cards{
+    width: 900px;
+}
+}
+@media screen and (max-width:935px) {
+  .about-cards{
+    width: 800px;
+}
+}
+@media screen and (max-width:835px) {
+.about-cards{
+  width: 750px;
+}
+.about-title{
+  font-weight: 550;
+  font-size: 24px;
+}
+.about-text{
+  font-size: 16px;
+}
+.about-img{
+width: 300px;
+height:200px;
+}
+
+}
+@media screen and (max-width:785px) {
+  .about-cards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 650px;
+    padding:  15px;
+}
+.about-img{
+  width: 100%;
+  height:300px;
+  border-radius: 30px;
+}
+.about-info{
+    padding: 15px;
+}
+
+  }
+  @media screen and (max-width:715px) {
+    .about-cards{
+      width: 600px;
+  }
+  .about-img{
+    height:250px;
+  }
+  .about-info{
+      padding: 15px;
+  }
+  
+    }
+    @media screen and (max-width:650px) {
+      .about-cards{
+        width: 550px;
+    }
+    .about-img{
+      height:200px;
+    }
+    
+      }
+      @media screen and (max-width:600px) {
+        .about-cards{
+          width: 500px;
+      }
+      .about-img{
+        height:200px;
+      }
+      
+        }
+        @media screen and (max-width: 525px) {
+          .about-cards{
+            width: 400px;
+        }
+        .about-img{
+          height:180px;
+        }
+        .about-subtitle{
+          font-size: 22px;
+          padding:  0px 10px;
+        }
+          }
+          @media screen and (max-width: 437px) {
+            .about-cards{
+              width: 350px;
+          }
+          .about-img{
+            height:150px;
+          }
+          .about-subtitle{
+            font-size: 18px;
+            padding:  0px 10px;
+          }
+          .about-paragraph{
+            display: none;
+          }
+            }
+            @media screen and (max-width: 380px) {
+              .about-cards{
+                width: 300px;
+            }
+            .about-img{
+              height:150px;
+            }
+            .about-subtitle{
+              font-size: 14px;
+              padding:  0px 10px;
+            }
+            .about-caption{
+              padding: 0 10px;
+              font-size: 16px;
+            }
+            .about-texts{
+              display: flex;
+              justify-content: start;
+              align-items: start;
+            }
+              }
+              @media screen and (max-width: 350px) {
+                .about-cards{
+                  width: 290px;
+              }
+              .about-img{
+                height:130px;
+              }
+              .about-info{
+                 display: block;
+              }
+              .about-caption{
+                padding: 0 10px;
+                font-size: 16px;
+              }
+              .about-texts{
+                display: flex;
+                justify-content: start;
+                align-items: start;
+              }
+                }
