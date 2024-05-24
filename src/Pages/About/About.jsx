@@ -1,7 +1,7 @@
 import React from 'react'
 import './About.css'
 import { airplane, train } from '../../assets'
-import Button from '../../Component/Button/Button'
+// import Button from '../../Component/Button/Button'
 const About = () => {
   return (
     <div className='about'>
@@ -18,7 +18,7 @@ const About = () => {
                              className="about-subtitle">Temir Yo‘l Biletlari Biz Bilan</h2>
                             <p className='about-paragraph'> Butun dunyo bo'ylab</p>
                         </div>
-                        <Button width={'155px'} height={'47px'} bg={'#22B3C1'} color={'#fff'} borderRadius={'12px'} />
+                        <button className="about-buttons">Ko'proq bilish</button>
                     </div>
                     <p className='about-caption'>Temir yo'l orqali biz bilan sarguzashtlarni kashf eting! Baland tog'larni, betakror tabiat manzalarni, qadimiy va navqiron shaharlarni, takrorlanmas landshaflarni biz bilan birga toping. Qiziqarlimi? Biz bilan bog'laning.</p>
                 </div>
@@ -32,7 +32,7 @@ const About = () => {
                              className="about-subtitle">Aviabiletlar Biz Bilan Arzon</h2>
                             <p className='about-paragraph'> Butun dunyo bo'ylab</p>
                         </div>
-                        <Button width={'155px'} height={'47px'} bg={'#22B3C1'} color={'#fff'} borderRadius={'12px'} />
+                       <button className="about-buttons">Ko'proq bilish</button>
                     </div>
                     <p className='about-caption'>Temir yo'l orqali biz bilan sarguzashtlarni kashf eting! Baland tog'larni, betakror tabiat manzalarni, qadimiy va navqiron shaharlarni, takrorlanmas landshaflarni biz bilan birga toping. Qiziqarlimi? Biz bilan bog'laning.</p>
                 </div>

@@ -22,7 +22,7 @@ const Help = () => {
            Eng Yaxshi Haftalik Takliflarimiz
            </h1>
            <p className="help-text">
-           Har bir shaharda faqat siz uchun tuzilgan eng yaxshi  <br /> haftalik takliflarni kashf eting.   <br /> O'zingizni sarguzashtlar dunyosida his qiling.
+           Har bir shaharda faqat siz uchun tuzilgan eng yaxshi  <br /> haftalik takliflarni kashf eting.    O'zingizni sarguzashtlar dunyosida his qiling.
            </p>
     <Swiper
       slidesPerView={3}

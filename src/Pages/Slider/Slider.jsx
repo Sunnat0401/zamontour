@@ -1,16 +1,19 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
-import { dubai, India, sharm, usa } from '../../assets';
-import './Slider.css';
 
-const Slider = () => {
+import { antalia, dubai, eng, India, istanbul, sharm, usa } from '../../assets';
+import './Slider.css';
+import { EffectCoverflow,Pagination, Navigation } from 'swiper/modules';
+
+const SliderExam = () => {
   return (
     <div className="container">
+     <div className="sliderexam-wrapper">
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
@@ -33,25 +36,25 @@ const Slider = () => {
         className="swiper_container"
       >
         <SwiperSlide>
-          <img src={India} alt="slide_image" />
+          <img className='swiperexam-img'   src={dubai} alt="slide_image" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={usa} alt="slide_image" />
+          <img className='swiperexam-img'   src={eng} alt="slide_image" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={sharm} alt="slide_image" />
+          <img className='swiperexam-img'   src={India} alt="slide_image" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={dubai} alt="slide_image" />
+          <img className='swiperexam-img'   src={istanbul} alt="slide_image" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={India} alt="slide_image" />
+          <img  className='swiperexam-img'  src={sharm} alt="slide_image" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={usa} alt="slide_image" />
+          <img  className='swiperexam-img'  src={dubai} alt="slide_image" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={sharm} alt="slide_image" />
+          <img  className='swiperexam-img'  src={antalia} alt="slide_image" />
         </SwiperSlide>
 
         <div className="slider-controler">
@@ -65,7 +68,8 @@ const Slider = () => {
         </div>
       </Swiper>
     </div>
+    </div>
   );
 };
 
-export default Slider;
+export default SliderExam;
