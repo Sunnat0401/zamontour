@@ -25,7 +25,7 @@ const HomePages = () => {
           loop={true}
           pagination={{ clickable: true }}
           navigation={true}
-          autoplay={{ delay: 20000000, disableOnInteraction: false }}
+          autoplay={{ delay: 2000, disableOnInteraction: false }}
           modules={[Pagination, Navigation, Autoplay]}
           className="mySwiper"
         >

@@ -1,128 +1,4 @@
-// import Slider from "react-slick";
-// import 'slick-carousel/slick/slick.css';
-// import 'slick-carousel/slick/slick-theme.css';
-// import './Help.css';
-// import { canada, eng, istanbul, oman, sharm, usa } from "../../assets";
-// import Button from "../../Component/Button/Button";
 
-// const Help = () => {
-//   var settings = {
-//     dots: true,
-//     infinite: true,
-//     speed: 500,
-//     slidesToShow: 3,
-//     slidesToScroll: 1,
-//     autoplay: true, // Enable autoplay
-//     autoplaySpeed: 2000,
-//     centerMode: true,
-//     centerPadding: '0',
-//   };
-
-//   return (
-//     <div className="swiper-top">
-//       <div className='help'>
-//         <div className="container">
-//           <h1 className="help-title">Visa olishga yordam beramiz !</h1>
-//           <p className="help-text">Biz sizga oson, tez fursatda va albatta ishonchli viza olishga yordam beramiz.</p>
-//   <Slider {...settings} className="help-slider">
-//           <div className="help-slide">
-//             <div className="slider-card">
-//               <img src={sharm} alt="Sharm" className="slider-img" />
-//               <div className="slider-info">
-//                 <h3>Sharm</h3>
-//                 <p className="slider-text"><i className="fa-solid fa-users"></i> Buyurtmalar</p>
-//                 <div className="slider-border"></div>
-//                 <h4>Bizning xizmatlar o'z ichiga oladi</h4>
-//                 <p className="slider-text"><i className="fa-solid fa-tag"></i> Eng arzon narxlar</p>
-//                 <p className="slider-text"><i className="fa-regular fa-clock"></i> Tezkor ishlash vaqti</p>
-//                 <p className="slider-text"><i className="fa-solid fa-check"></i> Ishonchli yordam</p>
-//                 <Button width={'150px'} height={'47px'} bg={'#22B3C1'} color={'#fff'} borderRadius={'12px'} />
-//               </div>
-//             </div>
-//           </div>
-//           <div className="help-slide">
-//             <div className="slider-card">
-//               <img src={oman} alt="Oman" className="slider-img" />
-//               <div className="slider-info">
-//                 <h3>Oman</h3>
-//                 <p className="slider-text"><i className="fa-solid fa-users"></i> 300 Buyurtmalar</p>
-//                 <div className="slider-border"></div>
-//                 <h4>Bizning xizmatlar o'z ichiga oladi</h4>
-//                 <p className="slider-text"><i className="fa-solid fa-tag"></i> Eng arzon narxlar</p>
-//                 <p className="slider-text"><i className="fa-regular fa-clock"></i> Tezkor ishlash vaqti</p>
-//                 <p className="slider-text"><i className="fa-solid fa-check"></i> Ishonchli yordam</p>
-//                 <Button width={'150px'} height={'47px'} bg={'#22B3C1'} color={'#fff'} borderRadius={'12px'} />
-//               </div>
-//             </div>
-//           </div>
-//           <div className="help-slide">
-//             <div className="slider-card">
-//               <img src={usa} alt="USA" className="slider-img" />
-//               <div className="slider-info">
-//                 <h3>AQSH</h3>
-//                 <p className="slider-text"><i className="fa-solid fa-users"></i> 500 Buyurtmalar</p>
-//                 <div className="slider-border"></div>
-//                 <h4>Bizning xizmatlar o'z ichiga oladi</h4>
-//                 <p className="slider-text"><i className="fa-solid fa-tag"></i> Eng arzon narxlar</p>
-//                 <p className="slider-text"><i className="fa-regular fa-clock"></i> Tezkor ishlash vaqti</p>
-//                 <p className="slider-text"><i className="fa-solid fa-check"></i> Ishonchli yordam</p>
-//                 <Button width={'150px'} height={'47px'} bg={'#22B3C1'} color={'#fff'} borderRadius={'12px'} />
-//               </div>
-//             </div>
-//           </div>
-//           <div className="help-slide">
-//             <div className="slider-card">
-//               <img src={eng} alt="England" className="slider-img" />
-//               <div className="slider-info">
-//                 <h3>Angliya</h3>
-//                 <p className="slider-text"><i className="fa-solid fa-users"></i> 735 Buyurtmalar</p>
-//                 <div className="slider-border"></div>
-//                 <h4>Bizning xizmatlar o'z ichiga oladi</h4>
-//                 <p className="slider-text"><i className="fa-solid fa-tag"></i> Eng arzon narxlar</p>
-//                 <p className="slider-text"><i className="fa-regular fa-clock"></i> Tezkor ishlash vaqti</p>
-//                 <p className="slider-text"><i className="fa-solid fa-check"></i> Ishonchli yordam</p>
-//                 <Button width={'150px'} height={'47px'} bg={'#22B3C1'} color={'#fff'} borderRadius={'12px'} />
-//               </div>
-//             </div>
-//           </div>
-//           <div className="help-slide">
-//             <div className="slider-card">
-//               <img src={canada} alt="Canada" className="slider-img" />
-//               <div className="slider-info">
-//                 <h3>Canada</h3>
-//                 <p className="slider-text"><i className="fa-solid fa-users"></i> 900 Buyurtmalar</p>
-//                 <div className="slider-border"></div>
-//                 <h4>Bizning xizmatlar o'z ichiga oladi</h4>
-//                 <p className="slider-text"><i className="fa-solid fa-tag"></i> Eng arzon narxlar</p>
-//                 <p className="slider-text"><i className="fa-regular fa-clock"></i> Tezkor ishlash vaqti</p>
-//                 <p className="slider-text"><i className="fa-solid fa-check"></i> Ishonchli yordam</p>
-//                 <Button width={'150px'} height={'47px'} bg={'#22B3C1'} color={'#fff'} borderRadius={'12px'} />
-//               </div>
-//             </div>
-//           </div>
-//           <div className="help-slide">
-//             <div className="slider-card">
-//               <img src={istanbul} alt="Istanbul" className="slider-img" />
-//               <div className="slider-info">
-//                 <h3>Istanbul</h3>
-//                 <p className="slider-text"><i className="fa-solid fa-users"></i> 4500 Buyurtmalar</p>
-//                 <div className="slider-border"></div>
-//                 <h4>Bizning xizmatlar o'z ichiga oladi</h4>
-//                 <p className="slider-text"><i className="fa-solid fa-tag"></i> Eng arzon narxlar</p>
-//                 <p className="slider-text"><i className="fa-regular fa-clock"></i> Tezkor ishlash vaqti</p>
-//                 <p className="slider-text"><i className="fa-solid fa-check"></i> Ishonchli yordam</p>
-//                 <Button width={'150px'} height={'47px'} bg={'#22B3C1'} color={'#fff'} borderRadius={'12px'} />
-//               </div>
-//             </div>
-//           </div>
-//         </Slider>
-//   </div>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default Help;
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -134,34 +10,62 @@ import 'swiper/css/pagination';
 import './Help.css';
 
 // import required modules
-import { Pagination } from 'swiper/modules';
-import { dubai } from '../../assets';
+import { Autoplay, Pagination } from 'swiper/modules';
+import { antalia, china, dubai, eng, sauida, sharm } from '../../assets';
 
 const Help = () => {
   return (
     <>
+    <div className="help">
+    <div className="container">
+           <h1 className="help-title">
+           Eng Yaxshi Haftalik Takliflarimiz
+           </h1>
+           <p className="help-text">
+           Har bir shaharda faqat siz uchun tuzilgan eng yaxshi  <br /> haftalik takliflarni kashf eting.   <br /> O'zingizni sarguzashtlar dunyosida his qiling.
+           </p>
     <Swiper
       slidesPerView={3}
       spaceBetween={30}
       pagination={{
         clickable: true,
       }}
-      modules={[Pagination]}
-      className="mySwiper"
+      autoplay={{
+        delay: 2000,  // 2 seconds
+        disableOnInteraction: false,
+      }}
+      loop={true}
+      modules={[Pagination, Autoplay]}
+      className="help-swiper"
     >
-      <SwiperSlide>
+    <SwiperSlide>
         <div className="help-cards">
-          <img src={dubai} alt="" className="help-img" />
+          <img src={antalia} alt="" className="help-img" />
           <div className="help-card">
-            jkdfgkjdsfgjdsfkj
+          <h3 className='help-subtitle'>Antaliya</h3>
+                <p className="help-text"><i className="fa-solid fa-users"></i> Buyurtmalar</p>
+                <div className="help-border"></div>
+                <h4 className='help-headline'>Tur o'z ichiga oladi</h4>
+                <p className="help-text"><i className="fa-solid fa-tag"></i> Eng arzon narxlar</p>
+                <p className="help-text"><i className="fa-regular fa-clock"></i> Tezkor ishlash vaqti</p>
+                <p className="help-text"><i className="fa-solid fa-check"></i> Ishonchli yordam</p>
+                <button className="help-button">Joy band qilish</button>
           </div>
         </div>
       </SwiperSlide>
       <SwiperSlide> 
       <div className="help-cards">
-          <img src={dubai} alt="" className="help-img" />
+          <img src={sharm} alt="" className="help-img" />
           <div className="help-card">
-            jkdfgkjdsfgjdsfkj
+          <h3 className='help-subtitle'>Sharm</h3>
+                <p className="help-text"><i className="fa-solid fa-users"></i> Buyurtmalar</p>
+                <div className="help-border"></div>
+                <h4 className='help-headline'>Tur o'z ichiga oladi</h4>
+                <p className="help-text"><i className="fa-solid fa-tag"></i> Eng arzon narxlar</p>
+                <p className="help-text"><i className="fa-regular fa-clock"></i> Tezkor ishlash vaqti</p>
+                <p className="help-text"><i className="fa-solid fa-check"></i> Ishonchli yordam</p>
+                <button className="help-button">Joy band qilish</button>
+
           </div>
         </div>
       </SwiperSlide>
@@ -169,35 +73,70 @@ const Help = () => {
       <div className="help-cards">
           <img src={dubai} alt="" className="help-img" />
           <div className="help-card">
-            jkdfgkjdsfgjdsfkj
+          <h3 className='help-subtitle'>Dubai</h3>
+                <p className="help-text"><i className="fa-solid fa-users"></i> Buyurtmalar</p>
+                <div className="help-border"></div>
+                <h4 className='help-headline'>Tur o'z ichiga oladi</h4>
+                <p className="help-text"><i className="fa-solid fa-tag"></i> Eng arzon narxlar</p>
+                <p className="help-text"><i className="fa-regular fa-clock"></i> Tezkor ishlash vaqti</p>
+                <p className="help-text"><i className="fa-solid fa-check"></i> Ishonchli yordam</p>
+                <button className="help-button">Joy band qilish</button>
+
           </div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
       <div className="help-cards">
-          <img src={dubai} alt="" className="help-img" />
+          <img src={eng} alt="" className="help-img" />
           <div className="help-card">
-            jkdfgkjdsfgjdsfkj
+          <h3 className='help-subtitle'>AQSH</h3>
+                <p className="help-text"><i className="fa-solid fa-users"></i> Buyurtmalar</p>
+                <div className="help-border"></div>
+                <h4 className='help-headline'>Tur o'z ichiga oladi</h4>
+                <p className="help-text"><i className="fa-solid fa-tag"></i> Eng arzon narxlar</p>
+                <p className="help-text"><i className="fa-regular fa-clock"></i> Tezkor ishlash vaqti</p>
+                <p className="help-text"><i className="fa-solid fa-check"></i> Ishonchli yordam</p>
+                <button className="help-button">Joy band qilish</button>
+
           </div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
       <div className="help-cards">
-          <img src={dubai} alt="" className="help-img" />
+          <img src={sauida} alt="" className="help-img" />
           <div className="help-card">
-            jkdfgkjdsfgjdsfkj
+          <h3 className='help-subtitle'>Saudia</h3>
+                <p className="help-text"><i className="fa-solid fa-users"></i> Buyurtmalar</p>
+                <div className="help-border"></div>
+                <h4 className='help-headline'>Tur o'z ichiga oladi</h4>
+                <p className="help-text"><i className="fa-solid fa-tag"></i> Eng arzon narxlar</p>
+                <p className="help-text"><i className="fa-regular fa-clock"></i> Tezkor ishlash vaqti</p>
+                <p className="help-text"><i className="fa-solid fa-check"></i> Ishonchli yordam</p>
+                <button className="help-button">Joy band qilish</button>
+
           </div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
       <div className="help-cards">
-          <img src={dubai} alt="" className="help-img" />
+          <img src={china} alt="" className="help-img" />
           <div className="help-card">
-            jkdfgkjdsfgjdsfkj
+          <h3 className='help-subtitle'>China</h3>
+                <p className="help-text"><i className="fa-solid fa-users"></i> Buyurtmalar</p>
+                <div className="help-border"></div>
+                <h4 className='help-headline'>Tur o'z ichiga oladi</h4>
+                <p className="help-text"><i className="fa-solid fa-tag"></i> Eng arzon narxlar</p>
+                <p className="help-text"><i className="fa-regular fa-clock"></i> Tezkor ishlash vaqti</p>
+                <p className="help-text"><i className="fa-solid fa-check"></i> Ishonchli yordam</p>
+                <button className="help-button">Joy band qilish</button>
+
           </div>
         </div>
       </SwiperSlide>
     </Swiper>
+    </div>
+  
+    </div>
   </>
   )
 }

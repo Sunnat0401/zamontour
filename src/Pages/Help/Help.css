@@ -2,19 +2,34 @@
 .swiper-slide{
   width: 100%;
   height: 400px;
-  border: 2px solid red;
 }
-.swiper-slide {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+.help-swiper{
+  width: 100%;
+  height: 510px;
 }
-
+.help-title , .help-text{
+  text-align: center;
+}
+.help-title{
+  padding: 20px 0 ;
+font-weight: bold;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.help-text{
+  font-size: 18px;
+  width: 500px;
+  margin: 0 auto;
+  line-height: 20px;
+  color: #AFAFAF;
+  padding: 5px 0 15px;
+}
 /* Custom pagination styles */
 .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background: #22B3C1;
   opacity: 1;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .swiper-pagination-bullet-active {
@@ -23,32 +38,44 @@
 
 /* Specific styles for slides */
 .help-cards {
+  width: 360px;
+  height: 450px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  position: relative;
 }
 
 .help-img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 3px;
+  position: relative;
+  margin-left: -80px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
 }
 
 .help-card {
-  width: 100%;
-  height: 400px;
-  border: 2px solid red;
+  width: 270px;
+  height: 320px;
   background-color: #f9f9f9;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-around;
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  position: absolute;
+  margin: 120px 0px 0px 80px;
 }
-
+.help-subtitle{
+  font-weight: bold;
+  font-size: 22px;
+}
 .help-card-section {
   width: 100%;
   text-align: center;
@@ -59,7 +86,39 @@
 .help-card-section:last-child {
   border-bottom: none;
 }
-
+.help-text{
+  color: #AFAFAF;
+  padding: 10px 0;
+  display: flex ;
+  gap: 10px;
+}
+.help-border{
+  width: 100%;
+  height: 2px;
+  background-color: #AFAFAF;
+  /* margin: 10px 0; */
+}
+.help-headline{
+  padding: 3px 0;
+  font-weight: bold;
+  font-size: 17px;
+}
+.help-button{
+  width: 150px;
+  height: 35px;
+  border-radius: 50px;
+  background-color: #22B3C1;
+  color: #fff;
+  font-weight: bold;
+   font-size: 16px;
+   border: none;
+   transition: all 0.5s ease;
+}
+.help-button:hover{
+  background-color: #fff;
+  color: #22B3C1;
+  border: 1px solid #22B3C1;
+}
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .swiper-slide {
