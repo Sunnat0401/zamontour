@@ -79,17 +79,9 @@ body {
 }
 
 @media (max-width: 500px) {
-  .swiper_container {
-    height: 47rem;
-  }
-  .swiper-slide {
-    width: 28rem !important;
-    height: 36rem !important;
-  }
-  .swiper-slide .swiperexam-img {
-    width: 28rem !important;
-    height: 36rem !important;
-  }
+ .sliderexam-wrapper{
+  display: none;
+ }
 }
 
 .swiper-slide .swiperexam-img {
@@ -124,11 +116,7 @@ body {
   }
 }
 
-@media (max-width: 450px) {
-  .slider-controler .swiper-button-next {
-    left: 80% !important;
-    transform: translateX(-80%) !important;
-  }
+@media (max-width: 500px) {
 }
 
 @media (max-width: 990px) {
