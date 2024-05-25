@@ -198,6 +198,12 @@ height:200px;
         .about-paragraph{
           display: none;
         }
+        .about-buttons{
+          margin-top: 15px;
+          width: 120px;
+          height: 30px;
+          font-size: 12px;
+        }
           }
           @media screen and (max-width: 437px) {
             .about-cards{
@@ -238,6 +244,12 @@ height:200px;
               @media screen and (max-width: 350px) {
                 .about-cards{
                   width: 290px;
+              }
+              .about-buttons{
+                margin: 10px 50px;
+                width: 120px;
+                height: 30px;
+                font-size: 12px;
               }
               .about-img{
                 height:130px;
