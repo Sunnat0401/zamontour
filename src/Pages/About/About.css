@@ -78,8 +78,13 @@
 }
 @media screen and (max-width:1260px) {
   .about-cards{
-    width: 1000px;
+    width: 900px;
     margin: 0 auto;
+}
+.about-buttons{
+  margin-top: 15px;
+  width: 150px;
+  height: 40px;
 }
 .about-title{
   padding:  10px ;
@@ -99,14 +104,20 @@
   text-align: center;
 }
 }
-@media screen and (max-width:1035px) {
+/* @media screen and (max-width:1035px) {
   .about-cards{
     width: 900px;
 }
-}
+
+} */
 @media screen and (max-width:935px) {
   .about-cards{
     width: 800px;
+}
+.about-buttons{
+  margin-top: 20px;
+  width: 150px;
+  height: 40px;
 }
 }
 @media screen and (max-width:835px) {
@@ -120,10 +131,10 @@
 .about-text{
   font-size: 16px;
 }
-.about-img{
+/* .about-img{
 width: 300px;
 height:200px;
-}
+} */
 
 }
 @media screen and (max-width:785px) {
@@ -181,8 +192,11 @@ height:200px;
           height:180px;
         }
         .about-subtitle{
-          font-size: 22px;
-          padding:  0px 10px;
+          font-size: 18px;
+          padding:   10px 0;
+        }
+        .about-paragraph{
+          display: none;
         }
           }
           @media screen and (max-width: 437px) {

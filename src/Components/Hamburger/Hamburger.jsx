@@ -31,10 +31,10 @@ export default function TemporaryDrawer({ changeLanguages }) {
     <Box sx={{ width: 250 }}>
       <List className="hamburger-open">
         <ul className="hamburger-lists">
-          <li onClick={onCloseD} className="hamburger-list"><a className="hamburger-link" href="#info">{t("main")}</a></li>
-          <li onClick={onCloseD} className="hamburger-list"><a className="hamburger-link" href="#news">{t("about")}</a></li>
-          <li onClick={onCloseD} className="hamburger-list"><a className="hamburger-link" href="#services">{t("species")}</a></li>
-          <li onClick={onCloseD} className="hamburger-list"><a className="hamburger-link" href="#advantages">{t("contact")}</a></li>
+          <li onClick={onCloseD} className="hamburger-list"><a className="hamburger-link" href="#">{t("main")}</a></li>
+          <li onClick={onCloseD} className="hamburger-list"><a className="hamburger-link" href="#about">{t("about")}</a></li>
+          <li onClick={onCloseD} className="hamburger-list"><a className="hamburger-link" href="#offer">{t("species")}</a></li>
+          <li onClick={onCloseD} className="hamburger-list"><a className="hamburger-link" href="#favorites">{t("contact")}</a></li>
         </ul>
         <select onChange={handleChanges} value={languagess} className='navbar-select hamburger-select'>
           <option value="uz">Uz</option>

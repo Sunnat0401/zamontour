@@ -1,17 +1,16 @@
-import Button from '../Button/Button'
+import { useTranslation } from 'react-i18next'
 import './Footer.css'
 const Footer = () => {
-
+  const {t} = useTranslation()
   return (
     <div className='footer'>
         <div className="container">
     <div className="footer-information">
                   <div className="footer-cards">
-                    <h1 className="footer-title">SAYOHAT QILISHNI XOHLAYSIZMI?</h1>
-                    <h3 className="footer-subtitle">Unda biz bilan hoziroq bog'laning</h3>
+                    <h1 className="footer-title">{t("footer1")}</h1>
+                    <h3 className="footer-subtitle">{t("footer2")}</h3>
                   </div>
-        <Button width={'155px'} height={'47px'} bg={'#22B3C1'} color={'#fff'} borderRadius={'12px'} />
-
+             <button className='footer-btn'>{t("footer3")}</button>
             </div>
     </div>
            <div className="footer-bottom">

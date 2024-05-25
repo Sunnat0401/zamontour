@@ -1,13 +1,15 @@
 import React from 'react'
 import './About.css'
 import { airplane, train } from '../../assets'
+import { useTranslation } from 'react-i18next'
 // import Button from '../../Component/Button/Button'
 const About = () => {
+    const {t, i18n} = useTranslation()
   return (
-    <div className='about'>
+    <div className='about' id='about'>
         <div className="container">
-            <h1 className="about-title">Chiptalarni Biz Bilan <br /> Arzon Va Oson Toping</h1>
-            <p className="about-text">Har bir shaharda eng yaxshi temir yo‘l va aviachipta  <br />biletlarini biz bilan toping</p>
+            <h1 className="about-title">{t('about1')}<br /> {t('about2')}</h1>
+            <p className="about-text"> {t("about3")}<br /> {t("about4")}</p>
             <div className="about-wrapper">
             <div className="about-cards">
                 <img src={train} alt="train "  className='about-img'/>
@@ -15,12 +17,12 @@ const About = () => {
                     <div className="about-info">
                         <div className="about-texts">
                             <h2
-                             className="about-subtitle">Temir Yo‘l Biletlari Biz Bilan</h2>
-                            <p className='about-paragraph'> Butun dunyo bo'ylab</p>
+                             className="about-subtitle">{t("about5")}</h2>
+                            <p className='about-paragraph'> {t("about6")}</p>
                         </div>
-                        <button className="about-buttons">Ko'proq bilish</button>
+                        <button className="about-buttons">{t("homepage6")} </button>
                     </div>
-                    <p className='about-caption'>Temir yo'l orqali biz bilan sarguzashtlarni kashf eting! Baland tog'larni, betakror tabiat manzalarni, qadimiy va navqiron shaharlarni, takrorlanmas landshaflarni biz bilan birga toping. Qiziqarlimi? Biz bilan bog'laning.</p>
+                    <p className='about-caption'>{t("about7")}</p>
                 </div>
             </div>
             <div className="about-cards">
@@ -29,12 +31,12 @@ const About = () => {
                     <div className="about-info">
                         <div className="about-texts">
                             <h2
-                             className="about-subtitle">Aviabiletlar Biz Bilan Arzon</h2>
-                            <p className='about-paragraph'> Butun dunyo bo'ylab</p>
+                             className="about-subtitle">{t("about8")}</h2>
+                            <p className='about-paragraph'> {t("about6")}</p>
                         </div>
-                       <button className="about-buttons">Ko'proq bilish</button>
+                       <button className="about-buttons">{t("homepage6")}</button>
                     </div>
-                    <p className='about-caption'>Temir yo'l orqali biz bilan sarguzashtlarni kashf eting! Baland tog'larni, betakror tabiat manzalarni, qadimiy va navqiron shaharlarni, takrorlanmas landshaflarni biz bilan birga toping. Qiziqarlimi? Biz bilan bog'laning.</p>
+                    <p className='about-caption'>{t("about7")}</p>
                 </div>
             </div>
             </div>

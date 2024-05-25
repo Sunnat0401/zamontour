@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import './FavoriteConnect.css'
-import Button from '../Button/Button'
 import axios from 'axios'
 import { message } from 'antd'
+import { useTranslation } from 'react-i18next'
 const FavoriteConnect = () => {
+  const {t} = useTranslation()
   const [loading , setLoading] = useState(false)
   const SendMessage = ( event) =>{
     setLoading(true)
@@ -35,33 +36,33 @@ const FavoriteConnect = () => {
   }
   return (
     <div className='favorite-connect'>
-    <h1 className='favorite-subject'>O'z <span className='headline'>joyingizni </span> band <span className='headline'>qiling </span></h1>
+    <h1 className='favorite-subject'>{t("form1")} <span className='headline'>{t("form2")} </span> {t("form3")} <span className='headline'>{t("form4")} </span></h1>
     <form className='form-container ' onSubmit={SendMessage} id="myForm">
     <div className="form-wrapper" >
     <div className="form-row">
     <div class="form-group">
-            <label htmlFor="sfds" className='form-label'>Ismingiz </label> 
-            <input type="text"  className='form-input' placeholder="Muhammad" id="name"/>
-            <label htmlFor="iasdas" className='form-label'>Telefon raqamingiz</label>
-            <input type="text" className='form-input' placeholder='+998 90 124 95 71'  id="numbers" />
+            <label htmlFor="sfds" className='form-label'>{t("form5")} </label> 
+            <input required type="text"  className='form-input' placeholder="Muhammad" id="name"/>
+            <label htmlFor="iasdas" className='form-label'>{t("form6")}</label>
+            <input required type="text" className='form-input' placeholder='+998 90 124 95 71'  id="numbers" />
         </div>
         <div class="form-group">
-            <label htmlFor="sfds" className='form-label'>Necha kishisiz </label> 
-            <select id="chooseGuests" name="Guests" className="form-input " aria-label="Default select example" onchange="this.form.click()">
+            <label htmlFor="sfds" className='form-label'>{t("form7")} </label> 
+            <select required id="chooseGuests" name="Guests" className="form-input " aria-label="Default select example" onchange="this.form.click()">
                     <option selected="">ex. 3 or 4 or 5</option>
                     <option type="checkbox" name="option1" value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4+">4+</option>
                   </select>
-            <label htmlFor="iasdas" className='form-label'>Uchish sanasi </label>
-            <input type="date" id="iasdas"className='form-input' />
+            <label htmlFor="iasdas" className='form-label'>{t("form8")} </label>
+            <input required type="date" id="iasdas"className='form-input' />
         </div>
         </div>
          
  <div className='form-bottom'>
-<label for="chooseDestination" class="form-label">Manzilingizni tanlang</label>
-<select id="chooseCategory" name="Destination" class="form-select" aria-label="Default select example" onchange="this.form.click()">
+<label for="chooseDestination" class="form-label">{t("form9")}</label>
+<select required id="chooseCategory" name="Destination" class="form-select" aria-label="Default select example" onchange="this.form.click()">
   <option selected="">Antalya</option>
   <option value="Istanbul">Istanbul</option>
   <option value="Dubai">Dubai</option>
@@ -73,8 +74,8 @@ const FavoriteConnect = () => {
 </select>
 </div>
 <div  className='form-bottom'>
-  <label for="chooseDestination" className="form-label">Visa turini tanlang</label>
-  <select name="Destination" className="form-select" aria-label="Default select example" id="visa" onchange="this.form.click()">
+  <label for="chooseDestination" className="form-label">{t("form10")}</label>
+  <select required name="Destination" className="form-select" aria-label="Default select example" id="visa" onchange="this.form.click()">
     <option selected="">Country</option> 
     <option value="Europe">Europe</option>
     <option value="England">England</option>
@@ -87,7 +88,7 @@ const FavoriteConnect = () => {
     <option value="HongKong">Hong Kong</option>  
   </select>
 </div> 
-<Button width={'100%'} height={'47px'} bg={'#22B3C1'} color={'#fff'} borderRadius={'12px'} type="submit" />
+<button className='favorite-button' >{t("form11")}</button>
     </div>
         
     

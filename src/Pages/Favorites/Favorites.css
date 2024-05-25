@@ -15,14 +15,35 @@
     color: #fff;
     padding: 55px 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
 }
-
+.favorites-btn{
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #fff;
+    color: #22B3C1;
+    font-weight: bold;
+     font-size: 16px;
+     border: none;
+     transition: all 0.5s ease;
+     margin: 0 auto;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+  }
+  .favorites-btn:hover{
+    background-color: #22B3C1;
+    color: #fff;
+    border: 1px solid #fff;
+  }
 .favorites-subtitle {
     font-size: 50px;
     font-weight: 700;
     color: #fff;
     margin-bottom: 50px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
 }
 
 .favorite-cards {

@@ -1,16 +1,16 @@
 import React from 'react'
-import Button from '../../Component/Button/Button'
 import './Favorites.css'
-import FavoiteMap from '../../Component/FavoiteMap/FavoiteMap'
-import FavoriteConnect from '../../Component/FavoriteConnect/FavoriteConnect'
+import FavoriteConnect from '../../Components/FavoriteConnect/FavoriteConnect'
+import { useTranslation } from 'react-i18next'
 const Favorites = () => {
+  const {t} = useTranslation()
   return (
     <>
-     <div className='favorites'>
+     <div className='favorites' id='favorites'>
       <div className="container">
-        <h2 className='favorites-title'>O'zingiz yoqtirganingizni tanlang</h2>
-        <h1 className='favorites-subtitle'>O'z joyingizni band qiling</h1>
-        <Button width={'155px'} height={'47px'} bg={'#22B3C1'} color={'#fff'} borderRadius={'12px'} />
+        <h2 className='favorites-title'>{t("favorite1")}</h2>
+        <h1 className='favorites-subtitle'>{t("favorite2")}</h1>
+        <button className='favorites-btn'>{t("homepage6")}</button>
      
      
       </div>
@@ -19,18 +19,18 @@ const Favorites = () => {
     <div className='favorite-cards'>
         <div className="favorite-card">
         <i class="fa-solid fa-phone"></i>
-        <h3 className='favorite-text'>Telefon raqam</h3>
+        <h3 className='favorite-text'>{t("favorite3")}</h3>
          <span className='favorite-number'>+998 99 299 99 96</span>
         </div>
         <div className="favorite-card">
         <i class="fa-regular fa-envelope"></i>
-        <h3 className='favorite-text'>Bizga email orqali bog'laning
+        <h3 className='favorite-text'>{t("favorite4")}
 </h3>
          <span className='favorite-number'>zamonbiznestour@mail.ru</span>
         </div>
         <div className="favorite-card">
         <i class="fa-solid fa-location-dot"></i>
-        <h3 className='favorite-text'> Ofisimizga tashrif buyuring</h3>
+        <h3 className='favorite-text'> {t("favorite5")}</h3>
          <span className='favorite-number'>15/25, Chilanzar - 9, Tashkent city</span>
         </div>
       </div>
