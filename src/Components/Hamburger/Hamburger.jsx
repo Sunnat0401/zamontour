@@ -28,7 +28,7 @@ export default function TemporaryDrawer({ changeLanguages }) {
   };
 
   const DrawerList = (
-    <Box sx={{ width: 250 }}>
+    <Box sx={{ width: 265 }}>
       <List className="hamburger-open">
         <ul className="hamburger-lists">
           <li onClick={onCloseD} className="hamburger-list"><a className="hamburger-link" href="#">{t("main")}</a></li>

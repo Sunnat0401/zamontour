@@ -1,6 +1,6 @@
 .homepages {
   width: 100%;
-  height: 100vh;
+  height: 620px;
 
 }
 
@@ -8,6 +8,10 @@
   width: 100%;
   height: 100vh;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .homepages {
@@ -55,11 +59,11 @@
 
 .homepages-subtitle {
   font-size: 48px;
-  padding: 5px 0;
+  padding: 10px 0;
 }
 
 .homepages-button {
-  margin: 20px 0;
+  margin: 30px 0;
   width: 200px;
   height: 50px;
   border-radius: 50px;
@@ -81,7 +85,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 120px;
+  /* margin-top: 120px; */
   width: 1100px;
   background-color: #FFFFFF;
   border-radius: 80px;
@@ -253,28 +257,26 @@
   }
 
   .homepages-button {
-    width: 120px;
-    height: 40px;
-    font-size: 10px;
+    width: 140px;
+    height: 45px; 
+    font-size: 12px;
   }
 
   .homepages-cards {
-    justify-content: space-between;
-    margin-top: 50px;
-    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* margin-top: 100px; */
+    width: 300px;
     border-radius: 10px;
   }
-
   .homepages-card {
-    display: flex;
-    padding: 8px;
-    align-items: center;
-    justify-content: center;
+    padding: 15px;
   }
 
   .homepages-card .icon {
     font-size: 20px;
-    padding: 10px;
+    padding:  4px;
   }
 
   .homepages-person {
@@ -284,16 +286,10 @@
   .homepages-number {
     font-size: 16px;
   }
+
   .homepages-btn {
-    width: 100px;
+    width: 110px;
     height: 30px;
-    border-radius: 50px;
-    background-color: #22B3C1;
-    color: #fff;
-    font-weight: bold;
-    font-size: 10px;
-    border: none;
-    transition: all 0.5s ease;
   }
 
 }
