@@ -1,13 +1,16 @@
 import React from 'react'
 import './Countries.css'
+
 import { airplane, antalia, dubai, istanbul, sharm, train } from '../../assets'
-import { t } from 'i18next'
+import { t} from 'i18next'
+import { useTranslation } from 'react-i18next'
 const Countries = () => {
+    const { t, i18n } = useTranslation();
   return (
     <div className='countries'>
         <div className="container">
-            <h1 className="countries-title">Shaharlardan Biriga Hoziroq <br /> Tashrif Buyuring</h1>
-            <p className="countries-text">Har bir shahardagi eng yaxshi takliflarimizni kashf eting,<br /> faqat siz uchun. O'zingiz uchun yangi dunyosni oching va  <br /> misli ko'rilmagan sarguzashtlar ega bo'ling.</p>
+            <h1 className="countries-title">{t("countriesf1")} <br /> {t("countriesf2")}</h1>
+            <p className="countries-text">{t("countriesf3")}</p>
             <div className="countries-wrapper">
             <div className="countries-cards">
                 <img src={dubai} alt="train "  className='countries-img'/>
